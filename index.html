@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Spark</title>
+    <style>
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+        #card {
+            padding: 40px 20px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            width: 85%;
+            max-width: 400px;
+        }
+        h1 { 
+            color: #5d5d5d; 
+            font-size: 1.4rem; 
+            line-height: 1.6;
+            margin-bottom: 30px;
+            min-height: 80px; /* Keeps card size stable */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            background-color: #ff8a80;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 138, 128, 0.3);
+        }
+        button:active {
+            transform: scale(0.95);
+            background-color: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h1 id="message">Loading some magic...</h1>
+        <button onclick="generateMessage()">New Positivity Note</button>
+    </div>
+
+    <script>
+        const messages = [
+            "You're doing a great job at being you.",
+            "Take a deep breath. You’ve handled 100% of your bad days so far.",
+            "You are enough, exactly as you are right now.",
+            "Something wonderful is about to happen to you.",
+            "Your potential is endless.",
+            "Don't forget to celebrate the small wins today.",
+            "You make the world a little brighter just by being in it.",
+            "Mistakes are just proof that you're trying.",
+            "You don't have to be perfect to be amazing.",
+            "One small positive thought can change your whole day.",
+            "Be proud of how far you’ve come.",
+            "You are stronger than you feel and smarter than you think.",
+            "Hydrate, breathe, and be kind to yourself.",
+            "Your vibe attracts your tribe. Keep shining!",
+            "Progress is progress, no matter how small.",
+            "You deserve all the good things coming your way.",
+            "Believe you can, and you're halfway there.",
+            "Your hard work will pay off soon.",
+            "Sending you a giant digital high-five!",
+            "You are worthy of love, respect, and all the snacks.",
+            "The world needs your unique spark.",
+            "Focus on
